@@ -16,11 +16,17 @@ public class ChooseProduct  implements Task {
 	@Override
 	@Step("{0} choose product")
 	public <T extends Actor> void performAs(T actor) {
+		try {
+			//actor.attemptsTo(Click.on(LinioElement.PRODUCT));	
+			
+			int numeroRandom = (int) (Math.random() * 10)+1;
+			actor.attemptsTo(Click.on(productoLista.listaProductos().get(numeroRandom)));
+		} catch (Exception e) {
+			// TODO: handle exception
+			System.out.println("No encontro el elemento : "+e.getMessage());
+			e.printStackTrace();
+		}
 		
-		//actor.attemptsTo(Click.on(LinioElement.PRODUCT));	
-		
-		int numeroRandom = (int) (Math.random() * 10)+1;
-		actor.attemptsTo(Click.on(productoLista.listaProductos().get(numeroRandom)));
 		
 	
 	}

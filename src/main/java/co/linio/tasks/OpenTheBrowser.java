@@ -22,7 +22,19 @@ public class OpenTheBrowser implements Task{
 	@Override
 	@Step("{0} goes to #OpenTheBrowser")
 	public <T extends Actor> void performAs(T actor) {
-		actor.attemptsTo(Open.browserOn(page));
+		try {
+			actor.attemptsTo(Open.browserOn(page));
+		} catch (Exception e) {
+		
+			try {
+				actor.attemptsTo(Open.browserOn(page));
+			} catch (Exception e2) {
+				// TODO: handle exception
+				System.out.println("Error a cargar la pagina  "+ e.getMessage());
+				e.printStackTrace();
+			}
+		}
+		
 	}
 
 	public static OpenTheBrowser at(PageObject page) {

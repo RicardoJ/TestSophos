@@ -28,11 +28,13 @@ public class GoTo implements Task {
 			actor.attemptsTo(Click.on(LinioElement.LINIO_INPUT_SEARCH));
 			actor.attemptsTo(Enter.theValue(this.product).into(LinioElement.LINIO_INPUT_SEARCH).thenHit(Keys.ENTER));
 		} catch (Exception e) {
-			System.out.println("No encontro el elemento "+e);
+			System.out.println("No encontro el elemento : "+e.getMessage());
+			e.printStackTrace();
 		}
 		
 	
 	}
+	
 
 	public static GoTo theProduct(String product) {		
 		return instrumented(GoTo.class, product);
