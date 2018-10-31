@@ -17,6 +17,4 @@ import net.serenitybdd.cucumber.CucumberWithSerenity;
 		snippets = SnippetType.UNDERSCORE
 )
 		
-public class LinioRunner {
-
-}
+public class LinioRunner {}

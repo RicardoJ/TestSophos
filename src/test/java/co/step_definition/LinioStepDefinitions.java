@@ -56,9 +56,9 @@ public class LinioStepDefinitions {
 	}
 
 	
-	 @Then("^in the shopping cart show the product '(.*)' with quantity '(.*)'")
-	    public void in_the_shopping_cart_show_the_product_with_quantity(String expectedWord, String quantity) throws Throwable {
-		 ricardo.should(seeThat(TheResult.is(), equalTo(expectedWord)),seeThat(TheResultQuantity.is(), equalTo(quantity)));
+	 @Then("^in the shopping cart show the product is not '(.*)' with quantity not '(.*)'")
+	    public void in_the_shopping_cart_show_the_product_is_not_with_quantity_not(String expectedWord, String quantity) throws Throwable {
+		 ricardo.should(seeThat(TheResult.is(), equalTo(expectedWord)),seeThat(TheResultQuantity.is(), equalTo(quantity)));;
 		
 	    }
 	

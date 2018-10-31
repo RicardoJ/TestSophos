@@ -9,7 +9,14 @@ public class TheResultQuantity implements Question<String>{
 	@Override
 	public String answeredBy(Actor actor) {
 		// TODO Auto-generated method stub
-		return Text.of(ShoppingCartPage.QUANTITY).viewedBy(actor).asString();
+		if(!Text.of(ShoppingCartPage.QUANTITY).viewedBy(actor).asString().isEmpty()) {
+			return "null";
+		}else
+		{
+			return Text.of(ShoppingCartPage.QUANTITY).viewedBy(actor).asString();
+		}
+		
+		
 		
 	}
 
