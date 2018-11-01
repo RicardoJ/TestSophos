@@ -2,9 +2,6 @@ package co.linio.tasks;
 
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
-import com.google.common.base.Converter;
-
-import co.linio.user_interfaces.LinioElement;
 import co.linio.user_interfaces.ProductoLista;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
