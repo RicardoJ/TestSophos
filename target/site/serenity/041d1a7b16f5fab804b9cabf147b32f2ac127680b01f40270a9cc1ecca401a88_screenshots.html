@@ -76,7 +76,7 @@
     <div id="topbanner">
         <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
         <div id="projectname-banner" style="float:right">
-            <span class="projectname">TestSophos</span>
+            <span class="projectname">Test Sophos</span>
         </div>
     </div>
 </div>
@@ -108,7 +108,7 @@
             <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 31-10-2018 21:58</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 01-11-2018 08:50</span>
     <br style="clear:left"/>
 </div>
 
@@ -145,9 +145,9 @@ to search product
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
                             <span class="test-case-title">
-                                <span class="error-color">search in linio
+                                <span class="success-color">search in linio
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -164,115 +164,32 @@ to search product
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
-            <div class="screenshotFailure panel panel-danger">
-
-                        <div class="panel-heading title="Unreachable browser exception: The following error occurred: Error communicating with the remote browser. It may have died.Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'CPX-6LU0TAL5SXK', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'Driver info: driver.version: RemoteWebDriverCapabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\RICARD~1.DIA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}Session ID: 69a8716dfd854aa9ae00afbc053a9822">
-                            Unreachable browser exception: The following error occurred: Error communicating with the remote browser. It may have died.Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'System info: host: 'CPX-6LU0TAL5SX...
-                        </div>
-                <div><!-- Stack trace -->
-                    <button type="button" class="btn btn-danger" data-toggle="modal"
-                            data-target="#stacktraceModal-overall">
-                        View details
-                    </button>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
-                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal"
-                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                </button>
-                                <h4 class="modal-title" id="stacktraceModalLabel">
-                                    org.openqa.selenium.remote.UnreachableBrowserException
-                                </h4>
-                            </div>
-                            <div class="modal-body">
-                                    <h5>
-                                        <pre>The following error occurred: Error communicating with the remote browser. It may have died.<br>Build info: version: '3.11.0', revision: 'e59cfb3', time: '2018-03-11T20:26:55.152Z'<br>System info: host: 'CPX-6LU0TAL5SXK', ip: '192.168.0.8', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'<br>Driver info: driver.version: RemoteWebDriver<br>Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.36.540470 (e522d04694c7eb..., userDataDir: C:\Users\RICARD~1.DIA\AppDa...}, cssSelectorsEnabled: true, databaseEnabled: false, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, rotatable: false, setWindowRect: true, takesHeapSnapshot: true, takesScreenshot: true, unexpectedAlertBehaviour: , unhandledPromptBehavior: , version: 70.0.3538.77, webStorageEnabled: true}<br>Session ID: 69a8716dfd854aa9ae00afbc053a9822</pre>
-                                    </h5>
-                                    co.linio.tasks.GoTo.performAs(GoTo.java
-                                    :28) <br>
-                                    co.step_definition.LinioStepDefinitions.i_search_a_product(LinioStepDefinitions.java
-                                    :45) <br>
-                                    cucumber.runner.Runner.runPickle(Runner.java
-                                    :80) <br>
-                                    org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java
-                                    :86) <br>
-                                    org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java
-                                    :38) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :538) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java
-                                    :760) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java
-                                    :460) <br>
-                                    org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java
-                                    :206) <br>
-                            </div>
-
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal"
-                                            aria-label="Close"><span aria-hidden="true">&times;</span>
-                                    </button>
-                                    <h4 class="modal-title" id="stacktraceModalLabel">
-                                        Caused by: java.net.ConnectException
-                                    </h4>
-                                </div>
-                                <div class="modal-body">
-                                        <pre>Failed to connect to localhost/0:0:0:0:0:0:0:1:11843</pre>
-                                    <pre>
-                                        okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java :240) <br>
-                                        okhttp3.internal.connection.RealConnection.connect(RealConnection.java :158) <br>
-                                        okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java :256) <br>
-                                        okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java :134) <br>
-                                        okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java :113) <br>
-                                        okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java :42) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121) <br>
-                                        okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java :93) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121) <br>
-                                        okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java :93) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147) <br>
-                                        okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java :125) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :147) <br>
-                                        okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java :121) <br>
-                                        okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java :200) <br>
-                                        okhttp3.RealCall.execute(RealCall.java :77) <br>
-                                        co.linio.tasks.GoTo.performAs(GoTo.java :28) <br>
-                                        co.step_definition.LinioStepDefinitions.i_search_a_product(LinioStepDefinitions.java :45) <br>
-                                        cucumber.runner.Runner.runPickle(Runner.java :80) <br>
-                                        org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java :86) <br>
-                                        org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java :38) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :538) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java :760) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java :460) <br>
-                                        org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java :206) <br>
-                                    </pre>
-                                </div>
-
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="panel-body">
-                    <a href="#" target="_blank" class="btn btn-info">HTML Source</a>
-                </div>
-            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="2aa0a69dae62b2d773a5607b612ce2d432076b2de6a0bb45f1481c961ae68f66.png" title="Given that I opened  browser at Linio home page" width="1034"/>
-                <img src="2aa0a69dae62b2d773a5607b612ce2d432076b2de6a0bb45f1481c961ae68f66.png" title="ricardo goes to #OpenTheBrowser" width="1034"/>
-                <img src="30fac1c4a6d77510193c87634b22f6fffd4b73ea5f30fa4b9d16b155e37f3786.png" title="ricardo opens the Linio home page" width="1034"/>
-                <img src="2756580cd1e14c9aa6eabe1099ad59e9530e18b78286584e1542a10f981a76d6.png" title="And I search a product 'celular': <span class='error-color'>ERROR</span>" width="1034"/>
+                <img src="523427c7cf62aaff5b70b4a6fc013b44f17cf06c004a26194147829b801cdac2.png" title="Given that I opened  browser at Linio home page" width="1034"/>
+                <img src="d05a83b1f7f7307e84f56bd086c4ec87e9b479a0343fac4a7f1950035b7d379e.png" title="ricardo goes to #OpenTheBrowser" width="1034"/>
+                <img src="d05a83b1f7f7307e84f56bd086c4ec87e9b479a0343fac4a7f1950035b7d379e.png" title="ricardo opens the Linio home page" width="1034"/>
+                <img src="2756580cd1e14c9aa6eabe1099ad59e9530e18b78286584e1542a10f981a76d6.png" title="And I search a product 'celular'" width="1034"/>
+                <img src="c03cf007c330ec397eff4a23beb539b3820c51b10dc4af78b6e188c303d75fa5.png" title="And I search a product 'celular'" width="1034"/>
+                <img src="69697d84f65996363f8b35de24b098680f407ff45268e90a080c144e0351457f.png" title="ricardo search product" width="1034"/>
+                <img src="c03cf007c330ec397eff4a23beb539b3820c51b10dc4af78b6e188c303d75fa5.png" title="ricardo search product" width="1034"/>
+                <img src="1142b7ebcdec0219b7d486d85cce56ad1157d688639558833989138bb3755fb7.png" title="ricardo clicks on Linio input search " width="1034"/>
+                <img src="2fc7fa812d00633f2c1c0085658bd69de8352674c0ef21ef5d11eef679ae21be.png" title="ricardo clicks on Linio input search " width="1034"/>
+                <img src="2fc7fa812d00633f2c1c0085658bd69de8352674c0ef21ef5d11eef679ae21be.png" title="ricardo enters 'celular' into Linio input search " width="1034"/>
+                <img src="c03cf007c330ec397eff4a23beb539b3820c51b10dc4af78b6e188c303d75fa5.png" title="ricardo enters 'celular' into Linio input search " width="1034"/>
+                <img src="925843dd7eb94b4aba9a4a0f8b76efc401d893ae76fd9466116c98eed4146a8e.png" title="And choose product" width="1034"/>
+                <img src="925843dd7eb94b4aba9a4a0f8b76efc401d893ae76fd9466116c98eed4146a8e.png" title="ricardo choose product" width="1034"/>
+                <img src="d64ddde524bed264b14562fc0d21557597517a0b5a3d227661b0aba7fb0e2974.png" title="ricardo clicks on #target" width="1034"/>
+                <img src="3e39b99fb4159be0764aa407f05ed183cec69d5d7c63fd6e10e03861032677c8.png" title="When I add to shopping cart" width="1034"/>
+                <img src="4c393f91c330dcbe5dd1a4c9f51a3b2811ffe169d589cde228ae4192356068b8.png" title="When I add to shopping cart" width="1034"/>
+                <img src="31d6e9ab73ce0b0f9b98b2d73e752e422b21c8f54868800e70ba8235d6d8121c.png" title="ricardo add product" width="1034"/>
+                <img src="3e39b99fb4159be0764aa407f05ed183cec69d5d7c63fd6e10e03861032677c8.png" title="ricardo clicks on shopping cart" width="1034"/>
+                <img src="ce43648dc7e85a74bc2d19f3f67659425c310a7d8c9568517548d63de2341f1e.png" title="ricardo clicks on shopping cart" width="1034"/>
+                <img src="ce43648dc7e85a74bc2d19f3f67659425c310a7d8c9568517548d63de2341f1e.png" title="ricardo clicks on confirm shopping cart" width="1034"/>
+                <img src="31d6e9ab73ce0b0f9b98b2d73e752e422b21c8f54868800e70ba8235d6d8121c.png" title="ricardo clicks on confirm shopping cart" width="1034"/>
+                <img src="31d6e9ab73ce0b0f9b98b2d73e752e422b21c8f54868800e70ba8235d6d8121c.png" title="Then in the shopping cart show the product is not 'null' with quantity not 'null'" width="1034"/>
+                <img src="31d6e9ab73ce0b0f9b98b2d73e752e422b21c8f54868800e70ba8235d6d8121c.png" title="Then the result should be 'null'" width="1034"/>
+                <img src="31d6e9ab73ce0b0f9b98b2d73e752e422b21c8f54868800e70ba8235d6d8121c.png" title="Then the result quantity should be 'null': <span class='success-color'>SUCCESS</span>" width="1034"/>
             </div>
         </div>
 

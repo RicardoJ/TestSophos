@@ -5,7 +5,7 @@ import net.serenitybdd.screenplay.targets.Target;
 
 /**
  * 
- * Clase Extiende de PagObject, se encarga de mapear los elementos para la cantidad y nombre del producto en el carrito de compra 
+ * Clase Extiende de PagObject, se encarga de mapear los elementos para la cantidad y nombre del producto visualizado en el carrito de compra
  * 
  * @author ricardo.diaz
  *

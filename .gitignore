@@ -1,10 +1,2 @@
 /.gradle/
 /build/
-target/
-doc
-bin
-/.project
-/.classpath
-/.settings
-
-*.class
