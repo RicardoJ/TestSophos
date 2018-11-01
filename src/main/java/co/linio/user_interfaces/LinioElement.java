@@ -25,7 +25,7 @@ public class LinioElement extends PageObject {
 	/**
 	 * este elemento contiene el boton para dirigirse al carrito de compra
 	 */
-	public static final Target SHOPPING_CART = Target.the("shopping cart").locatedBy("//*[@id='buy-now']");
+	public static final Target SHOPPING_CART = Target.the("shopping cart").locatedBy("//*[@id='buy-now'][1]");
 	/**
 	 * este elemento contiene el boton de confirmacion para dirigirse al carrito de compra
 	 */

@@ -24,7 +24,10 @@ public class GoTo implements Task {
 	@Step("{0} search product")
 	public <T extends Actor> void performAs(T actor) {
 		try {
-			//actor.attemptsTo(Click.on(LinioElement.CLOSE_WINDOW_MODAL));	
+			if(LinioElement.CLOSE_WINDOW_MODAL.equals(true)) {
+				LinioElement.CLOSE_WINDOW_MODAL.wait(25000);
+			actor.attemptsTo(Click.on(LinioElement.CLOSE_WINDOW_MODAL));
+			}
 			actor.attemptsTo(Click.on(LinioElement.LINIO_INPUT_SEARCH));
 			actor.attemptsTo(Enter.theValue(this.product).into(LinioElement.LINIO_INPUT_SEARCH).thenHit(Keys.ENTER));
 		} catch (Exception e) {
